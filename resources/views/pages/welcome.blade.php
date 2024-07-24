@@ -1,73 +1,81 @@
 @extends('layouts.app')
 
 @section('body')
-    <div class="bg-white min-h-screen font-inter tracking-tight px-5 md:px-[140px">
-        <div class="relative isolate px-6 pt-14 lg:px-8">
-            <div class="mx-auto max-w-2xl py-32 sm:py-48">
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold tracking-tight text-blue-900 sm:text-5xl">Selamat Datang di Website Resmi
-                        Desa Mekar Sari</h1>
-                    <p class="mt-6 text-base leading-6 text-gray-600">Kami bangga menjadi desa yang kaya akan budaya, sejarah
-                        dan keindahan alam. Di sini, Anda dapat menemukan informasi terkini tentang desa kami, kegiatan
-                        masyarakat dan berbagai potensi yang kami miliki.</p>
-                    <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <a href="#"
-                            class="border border-blue-800 rounded-full text-blue-800 px-5 py-2.5 text-sm font-semibold hover:bg-blue-800 hover:text-white transition-transform duration-300 hover:scale-110">Baca
-                            Selengkapnya...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="explore">
-                <h1 class="text-center text-blue-800 text-3xl font-bold mt-12 mb-1">Eksplorasi Desa</h1>
-                <p class="text-center text-gray-500 mb-6">Melalui website ini, Anda dapat mengeksplorasi semua hal terkait
-                    desa, mulai aspek pemerintahan, penduduk, demografi, potensi desa hingga berita terkini tentang desa.
-                </p>
-                <div class="card-eksplorasi grid grid-cols-4 gap-5">
-                    <div class="card shadow-md rounded-md">
-                        <div class="card-image">
-                            <img src={{ asset('images/work-with-the-best.png') }} alt="image">
-                        </div>
-                        <div class="card-body text-center p-0 mb-4">
-                            <h2 class="font-bold">Profile Desa</h2>
-                        </div>
-                    </div>
-                    <div class="card shadow-md rounded-md">
-                        <div class="card-image">
-                            <img src={{ asset('images/work-with-the-best.png') }} alt="image">
-                        </div>
-                        <div class="card-body text-center p-0 mb-4">
-                            <h2 class="font-bold">Profile Desa</h2>
-                        </div>
-                    </div>
-                    <div class="card shadow-md rounded-md">
-                        <div class="card-image">
-                            <img src={{ asset('images/work-with-the-best.png') }} alt="image">
-                        </div>
-                        <div class="card-body text-center p-0 mb-4">
-                            <h2 class="font-bold">Profile Desa</h2>
-                        </div>
-                    </div>
-                    <div class="card shadow-md rounded-md">
-                        <div class="card-image">
-                            <img src={{ asset('images/work-with-the-best.png') }} alt="image">
-                        </div>
-                        <div class="card-body text-center p-0 mb-4">
-                            <h2 class="font-bold">Profile Desa</h2>
+    <div class="h-full">
+        <img src={{ asset('images/hero-mekar.png') }} alt="hero" class="w-full max-h-screen absolute z-0">
+        <div class="min-h-screen font-inter tracking-tight px-5 md:px-[140px] relative">
+            <div class="relative isolate px-6 pt-14 lg:px-8">
+                <div class="mx-auto max-w-2xl py-32 sm:py-48">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-bold tracking-tight text-blue-900 sm:text-5xl">Selamat Datang di Website
+                            Resmi
+                            Desa Mekar Sari</h1>
+                        <p class="mt-6 text-base leading-6 text-gray-600">Kami bangga menjadi desa yang kaya akan budaya,
+                            sejarah
+                            dan keindahan alam. Di sini, Anda dapat menemukan informasi terkini tentang desa kami, kegiatan
+                            masyarakat dan berbagai potensi yang kami miliki.</p>
+                        <div class="mt-10 flex items-center justify-center gap-x-6">
+                            <a href="#"
+                                class="border border-blue-800 rounded-full text-blue-800 px-5 py-2.5 text-sm font-semibold hover:bg-blue-800 hover:text-white transition-transform duration-300 hover:scale-110">Baca
+                                Selengkapnya...</a>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="explore">
+                    <h1 class="text-center text-blue-800 text-3xl font-bold mt-12 mb-1">Eksplorasi Desa</h1>
+                    <p class="text-center text-gray-500 mb-10">Melalui website ini, Anda dapat mengeksplorasi semua hal
+                        terkait
+                        desa, mulai aspek pemerintahan, penduduk, demografi, potensi desa hingga berita terkini tentang
+                        desa.
+                    </p>
+                    <div class="card-eksplorasi grid grid-cols-2 md:grid-cols-4 gap-5 text-blue-900">
+                        <div class="card shadow-md rounded-md">
+                            <div class="card-image">
+                                <img src={{ asset('images/get-personalised-candidate-recommendations.png') }}
+                                    alt="image">
+                            </div>
+                            <div class="card-body text-center p-0 mb-4">
+                                <h2 class="font-bold">Profile Desa</h2>
+                            </div>
+                        </div>
+                        <div class="card shadow-md rounded-md">
+                            <div class="card-image">
+                                <img src={{ asset('images/digital-nomad.png') }} alt="image">
+                            </div>
+                            <div class="card-body text-center p-0 mb-4">
+                                <h2 class="font-bold">Wisata Desa</h2>
+                            </div>
+                        </div>
+                        <div class="card shadow-md rounded-md">
+                            <div class="card-image">
+                                <img src={{ asset('images/black-friday-sale.png') }} alt="image">
+                            </div>
+                            <div class="card-body text-center p-0 mb-4">
+                                <h2 class="font-bold">Wirausaha Desa</h2>
+                            </div>
+                        </div>
+                        <div class="card shadow-md rounded-md">
+                            <div class="card-image">
+                                <img src={{ asset('images/news-anchor.png') }} alt="image">
+                            </div>
+                            <div class="card-body text-center p-0 mb-4">
+                                <h2 class="font-bold">Berita Desa</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
-    <div class="wrapper bg-blue-950 my-24 rounded-2xl font-inter tracking-tight md:px-[140px] py-11">
+    <div class="wrapper bg-blue-950 my-24 rounded-2xl font-inter tracking-tight px-5 md:px-[140px] py-11">
         <div class="maps text-white mb-20">
             <div class="maps-header flex justify-between mb-6">
                 <div class="maps-left-side">
                     <h1 class="text-3xl text-white font-bold mb-2">Peta Desa</h1>
                     <p>Menampilkan Peta Desa Mekar Sari</p>
                 </div>
-                <div class="maps-right-side">
+                <div class="maps-right-side hidden md:block">
                     <a href="#"
                         class="rounded-full border bg-white text-blue-800 px-5 py-2.5 font-semibold hover:border-white hover:text-white hover:bg-transparent">Tampilkan
                         di Google Maps</a>
@@ -79,6 +87,10 @@
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     class="w-full h-96 rounded-lg"></iframe>
             </div>
+            <div class="mt-4 flex justify-items-stretch w-full md:hidden">
+                <a href="#" class="text-sm text-center border-2 border-white py-2 px-4 w-full rounded-md">Tampilkan di
+                    Google Maps</a>
+            </div>
         </div>
         <div class="structure bg-white rounded-lg min-w-full p-4">
             <div class="structure-wrapper p-4">
@@ -87,11 +99,10 @@
                         <h1 class="text-3xl text-blue-800 font-bold mb-2">SOTK</h1>
                         <p>Struktur Organisasi dan Tata Kerja Desa Mekar Sari</p>
                     </div>
-                    <div class="maps-right-side">
-                        <a href="#" class="t-side">
-                            <a href="#"
-                                class="rounded-full border bg-blue-900 text-white px-5 py-2.5 font-semibold hover:border-blue-900 hover:text-blue-900 hover:bg-transparent">Tampilkan
-                                selengkapnya...</a>
+                    <div class="maps-right-side hidden md:block">
+                        <a href="#"
+                            class="rounded-full border bg-blue-900 text-white px-5 py-2.5 font-semibold hover:border-blue-900 hover:text-blue-900 hover:bg-transparent">Tampilkan
+                            selengkapnya</a>
                     </div>
                 </div>
                 <div class="swiper mySwiper w-full">
@@ -224,6 +235,11 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                </div>
+                <div class="mt-2 w-full flex justify-items-stretch md:hidden">
+                    <a href="#"
+                        class="text-sm text-center text-blue-700 border-2 border-blue-800 py-2 px-4 w-full rounded-md">Lihat
+                        Selengkapnya</a>
                 </div>
             </div>
         </div>

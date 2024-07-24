@@ -1,16 +1,26 @@
 <footer class="bg-white font-inter">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0">
-                <a href="https://flowbite.com/" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            <div class="mb-10 md:mb-0">
+                <a href="/" class="flex items-center">
+                    <img src={{ asset('images/logo-deli-serdang.png') }} class="h-16 md:h-28 me-5" alt="FlowBite Logo" />
+
+                    <span class="text-blue-800">
+                        <h1 class="self-center text-lg md:text-2xl font-bold whitespace-nowrap text-gray-900 mb-2">
+                            Desa Mekar
+                            Sari</h1>
+                        <div class="font-medium text-[12px] md:text-sm flex flex-col">
+                            <p>Kecamatan Deli Tua</p>
+                            <p>Kabupaten Deli Serdang</p>
+                            <p>Provinsi Sumatera Utara</p>
+                        </div>
+                    </span>
                 </a>
             </div>
             <div class="flex flex-row gap-8 sm:gap-20">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Link</h2>
-                    <ul class="text-blue-700 dark:text-gray-400 text-sm">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Link</h2>
+                    <ul class="text-blue-800 text-sm">
                         <li class="mb-4">
                             <a href="#" class="hover:underline hover:text-blue-6  00">Beranda</a>
                         </li>
@@ -26,24 +36,41 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kontak Desa</h2>
-                    <ul class="text-blue-700 dark:text-gray-800 text-sm">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Kontak Desa</h2>
+                    <ul class="text-blue-800 text-sm">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline hover:text-blue-600"><i
-                                    class="bi bi-telephone-fill me-2"></i> 0854 7237 9384</a>
+                            <a href="#" class="hover:underline hover:text-blue-600">
+                                <span class="flex gap-2">
+                                    <i class="bi bi-telephone-fill me-2"></i>
+                                    <span>0854 7237 9384</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline hover:text-blue-600"><i
-                                    class="bi bi-envelope-fill me-2"></i> mekarsari@mekar.com</a>
+                            <a href="#" class="hover:underline hover:text-blue-600">
+                                <span class="flex gap-2">
+                                    <i class="bi bi-envelope-fill me-2"></i>
+                                    <span>mekarsari@mekar.com</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline hover:text-blue-600"><i
-                                    class="bi bi-clock-fill me-2"></i> 08.00 - 17.00 WIB</a>
+                            <a href="#" class="hover:underline hover:text-blue-600">
+                                <span class="flex gap-2">
+                                    <i class="bi bi-clock-fill me-2"></i>
+                                    <span>08.00 - 17.00 WIB</span>
+                                </span>
+                            </a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="hover:underline hover:text-blue-600"><i
-                                    class="bi bi-geo-alt-fill me-2"></i> Kecamatan Deli Tua, Kabupaten Deli Serdang,
-                                provinsi Sumatera Utara, Indonesia</a>
+                            <a href="#" class="hover:underline hover:text-blue-600">
+                                <span class="flex gap-2">
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    <span>Kecamatan Deli Tua, Kabupaten
+                                        Deli Serdang,
+                                        provinsi Sumatera Utara, Indonesia</span>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
