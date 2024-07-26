@@ -21,6 +21,10 @@ Route::get('/struktur-organisasi', function () {
     return view('pages.struktur-organisasi');
 });
 
-Route::get('/articles', function () {
+Route::get('/berita', function () {
     return view('pages.articles');
+});
+
+Route::get('/profil-desa', function () {
+    return view('pages.profil-desa');
 });

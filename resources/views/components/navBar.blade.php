@@ -21,8 +21,6 @@
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Profil
                                 Desa</a>
                             <a href="/"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Infografis</a>
-                            <a href="/"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Wirausaha</a>
                             <a href="/articles"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Berita</a>
@@ -64,8 +62,6 @@
                 <a href="/struktur-organisasi"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Profil
                     Desa</a>
-                <a href="/"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Infografis</a>
                 <a href="/"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Wirausaha</a>
                 <a href="/articles"
