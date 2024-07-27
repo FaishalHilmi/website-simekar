@@ -17,12 +17,12 @@
                                 aria-current="page">Dashboard</a> --}}
                             <a href="/"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Beranda</a>
-                            <a href="/struktur-organisasi"
+                            <a href="/profil-desa"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Profil
                                 Desa</a>
-                            <a href="/"
+                            <a href="/wirausaha"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Wirausaha</a>
-                            <a href="/articles"
+                            <a href="/berita"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Berita</a>
                         </div>
                     </div>
@@ -59,12 +59,12 @@
                     aria-current="page">Dashboard</a> --}}
                 <a href="/"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Beranda</a>
-                <a href="/struktur-organisasi"
+                <a href="/profil-desa"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Profil
                     Desa</a>
-                <a href="/"
+                <a href="/wirausaha"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Wirausaha</a>
-                <a href="/articles"
+                <a href="/berita"
                     class="block rounded-md px-3 py-2 text-base font-medium text-blue-800 hover:bg-sky-100 hover:text-blue-700">Berita</a>
             </div>
         </div>

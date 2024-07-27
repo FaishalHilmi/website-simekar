@@ -33,7 +33,7 @@
                             </div>
                             <div class="misi">
                                 <h1 class="text-3xl text-blue-800 font-bold mb-4 text-center">MISI</h1>
-                                <ol class="text-gray-900 list-decimal ms-6">
+                                <ol class="text-gray-900 list-decimal ms-6 text-justify">
                                     <li>
                                         Meningkatkan kapasitas dan keterampilan masyarakat melalui pelatihan dan pendidikan,
                                         serta mempromosikan partisipasi aktif dalam pembangunan desa.
@@ -156,7 +156,7 @@
                                     <div class="card-body flex flex-row items-center p-4 rounded-lg bg-gray-50 shadow-md">
                                         <div class="icon me-2">
                                             <div class="icon-wrapper p-4 bg-red-200 rounded-md">
-                                                <i class="bi bi-gender-male text-3xl text-red-400"></i>
+                                                <i class="bi bi-gender-female text-3xl text-red-400"></i>
                                             </div>
                                         </div>
                                         <div class="description">

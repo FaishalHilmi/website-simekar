@@ -3,7 +3,7 @@
 @section('body')
     <div class="bg-white min-h-screen font-inter pt-10">
         <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <h2 class="text-3xl font-bold tracking-tight text-blue-900">Berita Desa</h2>
+            <h2 class="text-3xl font-bold tracking-tight text-blue-800">Berita Desa</h2>
             <p class="text-sm md:text-base">Memberikan informasi terbaru mengenai peristiwa, berita terkini, dan
                 artikel-artikel jurnalistik dari Desa
                 Mekar Sari.</p>

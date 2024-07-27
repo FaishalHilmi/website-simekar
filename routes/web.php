@@ -22,9 +22,21 @@ Route::get('/struktur-organisasi', function () {
 });
 
 Route::get('/berita', function () {
-    return view('pages.articles');
+    return view('pages.articles.index');
+});
+
+Route::get('/berita/detail', function () {
+    return view('pages.articles.show');
 });
 
 Route::get('/profil-desa', function () {
     return view('pages.profil-desa');
+});
+
+Route::get('/wirausaha', function () {
+    return view('pages.wirausaha.index');
+});
+
+Route::get('/wirausaha/detail/{', function () {
+    return view('pages.wirausaha.index');
 });
