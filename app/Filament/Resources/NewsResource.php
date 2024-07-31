@@ -2,63 +2,66 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ArticleResource\Pages;
-use App\Filament\Resources\ArticleResource\RelationManagers;
-use App\Models\Article;
 use Filament\Forms;
+use App\Models\News;
+use Filament\Tables;
+use Filament\Forms\Form;
+use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Filament\Tables;
-use Filament\Tables\Columns\ImageColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\HtmlColumn;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\NewsResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\NewsResource\RelationManagers;
 
-class ArticleResource extends Resource
+class NewsResource extends Resource
 {
-    protected static ?string $model = Article::class;
+    protected static ?string $model = News::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $pluralLabel = 'Berita';
 
-    // function baru
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 TextInput::make('title')
-                    ->required(),
+                    ->label("Judul Berita")
+                    ->required()
+                    ->columnSpan('full'),
                 RichEditor::make('description')
-                    ->columnSpan('full')
-                    ->required(),
+                    ->label("Deskripsi Berita")
+                    ->required()
+                    ->columnSpan('full'),
                 FileUpload::make('image')
+                    ->label("Gambar Berita")
+                    ->required()
                     ->image()
-                    ->required(),
+                    ->columnSpan('full'),
             ]);
     }
-
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('title')
-                    ->label('Title')
+                    ->label('Judul Berita')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('description')
-                    ->label('Description')
+                    ->label('Deskripsi Berita')
                     ->limit(50)
                     ->html()
                     ->sortable()
                     ->searchable(),
                 ImageColumn::make('image')
+                    ->label('Gambar Berita')
             ])
             ->filters([
                 //
@@ -84,9 +87,9 @@ class ArticleResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListArticles::route('/'),
-            'create' => Pages\CreateArticle::route('/create'),
-            'edit' => Pages\EditArticle::route('/{record}/edit'),
+            'index' => Pages\ListNews::route('/'),
+            'create' => Pages\CreateNews::route('/create'),
+            'edit' => Pages\EditNews::route('/{record}/edit'),
         ];
     }
 }

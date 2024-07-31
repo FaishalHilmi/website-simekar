@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\UMKMResource\Pages;
+namespace App\Filament\Resources\CommerceResource\Pages;
 
-use App\Filament\Resources\UMKMResource;
+use App\Filament\Resources\CommerceResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListUMKMS extends ListRecords
+class ListCommerces extends ListRecords
 {
-    protected static string $resource = UMKMResource::class;
+    protected static string $resource = CommerceResource::class;
 
     protected function getHeaderActions(): array
     {

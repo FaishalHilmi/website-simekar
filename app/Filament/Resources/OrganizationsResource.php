@@ -24,29 +24,36 @@ class OrganizationsResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $pluralLabel = 'Organisasi';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('nama')
+                TextInput::make('name')
+                    ->label("Nama")
                     ->required(),
-                Select::make('jabatan')->options([
-                    'Kepala Desa' => 'Kepala Desa',
-                    'Sekretaris Desa' => 'Sekretaris Desa',
-                    'Kepala Dusun 1' => 'Kepala Dusun 1',
-                    'Kepala Dusun 2' => 'Kepala Dusun 2',
-                    'Kepala Dusun 3' => 'Kepala Dusun 3',
-                    'Kepala Dusun 4' => 'Kepala Dusun 4',
-                    'Kepala Dusun 5' => 'Kepala Dusun 5',
-                    'Kepala Dusun 6' => 'Kepala Dusun 6',
-                    'Kepala Dusun 7' => 'Kepala Dusun 7',
-                    'Kepala Dusun 8' => 'Kepala Dusun 8',
-                    'Kepala Dusun 9' => 'Kepala Dusun 9',
-                ])
+                Select::make('position')
+                    ->label("Jabatan")
+                    ->options([
+                        'Kepala Desa' => 'Kepala Desa',
+                        'Sekretaris Desa' => 'Sekretaris Desa',
+                        'Kepala Dusun 1' => 'Kepala Dusun 1',
+                        'Kepala Dusun 2' => 'Kepala Dusun 2',
+                        'Kepala Dusun 3' => 'Kepala Dusun 3',
+                        'Kepala Dusun 4' => 'Kepala Dusun 4',
+                        'Kepala Dusun 5' => 'Kepala Dusun 5',
+                        'Kepala Dusun 6' => 'Kepala Dusun 6',
+                        'Kepala Dusun 7' => 'Kepala Dusun 7',
+                        'Kepala Dusun 8' => 'Kepala Dusun 8',
+                        'Kepala Dusun 9' => 'Kepala Dusun 9',
+                    ])
                     ->required(),
                 FileUpload::make('image')
-                    ->required()
-                    ->image(),
+                    ->label('Foto Profil')
+                    ->image()
+                    ->nullable()
+                    ->columnSpan('full'),
             ]);
     }
 
@@ -54,15 +61,16 @@ class OrganizationsResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('nama')
+                TextColumn::make('name')
                     ->label('Nama')
                     ->sortable()
                     ->searchable(),
-                TextColumn::make('jabatan')
+                TextColumn::make('position')
                     ->label('Jabatan')
                     ->sortable()
                     ->searchable(),
                 ImageColumn::make('image')
+                    ->label('Foto Profil')
             ])
             ->filters([
                 //

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\OrganizationsResource\Pages;
+namespace App\Filament\Resources\NewsResource\Pages;
 
-use App\Filament\Resources\OrganizationsResource;
+use App\Filament\Resources\NewsResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditOrganizations extends EditRecord
+class EditNews extends EditRecord
 {
-    protected static string $resource = OrganizationsResource::class;
+    protected static string $resource = NewsResource::class;
 
     protected function getHeaderActions(): array
     {
@@ -19,6 +19,6 @@ class EditOrganizations extends EditRecord
 
     protected function getRedirectUrl(): string
     {
-        return url('/admin/organizations');
+        return url('/admin/news');
     }
 }

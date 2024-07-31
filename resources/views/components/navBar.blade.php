@@ -1,13 +1,14 @@
-<header class="fixed inset-x-0 top-0 z-50 bg-white">
+<header class="fixed inset-x-0 top-0 z-50 md:py-2 bg-white">
     <nav x-data="{ isOpen: false }">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center justify-between w-full">
                     <div>
-                        <h1
+                        {{-- <h1
                             class="text-xl pe-4 font-extrabold font-inter italic text-transparent bg-clip-text bg-gradient-to-br from-blue-800 to-blue-600">
                             SIMEKAR
-                        </h1>
+                        </h1> --}}
+                        <img src={{ asset('images/logo-simekar.png') }} alt="logo" class="w-44 md:w-56">
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
